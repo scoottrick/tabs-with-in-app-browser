@@ -8,7 +8,7 @@ const iabOptions: InAppBrowserOptions = {};
 
 @Component({
     selector: 'browser-component',
-    template: ``
+    template: `<ion-content></ion-content>`
 })
 
 export class BrowserPage implements OnInit {
