@@ -1,0 +1,53 @@
+<ion-content padding>
+    <ion-card>
+        <ion-card-header>
+            Normal Behavior
+        </ion-card-header>
+
+        <ion-card-content>
+            <p margin-bottom>This opens a page with the standard Ionic Tabs layout created with the CLI tabs template. Use this to observe the intended behavior of the layout.</p>
+
+            <h2>Steps</h2>
+
+            <ol padding-horizontal>
+                <li>Tap the open button on this card.</li>
+                <li>Play around with the tabs on the tab page.</li>
+                <li>Notice the tabs are correctly shown as active an inactive.</li>
+            </ol>
+        </ion-card-content>
+
+        <ion-item no-padding>
+            <button item-end ion-button icon-left clear (click)="openTabsPage()">
+                <ion-icon name="open"></ion-icon>
+                Open
+            </button>
+        </ion-item>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            Buggy Behavior
+        </ion-card-header>
+
+        <ion-card-content>
+            <p margin-bottom>This is intended to show issues with the Ionic Tabs layout after and In App Browser is opened. After opening the In App Browser in the app, the tabbed navigation continues to work correctly. However, the active/inactive state of the tabs is updated incorrectly.</p>
+
+            <h2>Steps</h2>
+
+            <ol padding-horizontal>
+                <li>Tap the open button on this card.</li>
+                <li>Wait for the in app browser to open and load.</li>
+                <li>Close the in app browser ("Done" button in bottom left on iOS, "x" button in top right on Android).</li>
+                <li>Play around with the tabs on the tab page.</li>
+                <li>Notice the active/inactive state of the tabs is recorded incorrectly. Note: the correct components should still open in the tab layout.</li>
+            </ol>
+        </ion-card-content>
+
+        <ion-item no-padding>
+            <button item-end ion-button icon-left clear (click)="openBrowser()">
+                <ion-icon name="open"></ion-icon>
+                Open
+            </button>
+        </ion-item>
+    </ion-card>
+</ion-content>
